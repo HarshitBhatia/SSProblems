@@ -10,15 +10,13 @@ public class SelectionSort {
         printArray(array);
         //selection sorting begins
         for(int i=0;i< array.length;i++){
-            int min=array[i];
-            int pos=i;
+            int min=i;
             for(int j=i+1;j<array.length;j++){
-                if(array[j]<min){
-                    min=array[j];
-                    pos=j;
+                if(array[j]<array[min]){
+                    min=j;
                 }
             }
-            swap(array,i,pos);
+            swap(array,i,min);
         }
         System.out.println();
         printArray(array);

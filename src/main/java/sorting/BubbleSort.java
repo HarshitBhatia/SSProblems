@@ -1,6 +1,6 @@
 package sorting;
 
-import util.Fields;
+import utility.Fields;
 
 import java.util.Arrays;
 
